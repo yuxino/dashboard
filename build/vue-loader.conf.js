@@ -7,10 +7,14 @@ const sourceMapEnabled = isProduction
   : config.dev.cssSourceMap
 
 module.exports = {
-  loaders: utils.cssLoaders({
-    sourceMap: sourceMapEnabled,
-    extract: isProduction
-  }),
+  // merge tslint
+  loaders: {
+    ...utils.cssLoaders({
+      sourceMap: sourceMapEnabled,
+      extract: isProduction,
+    }),
+    ts: 'ts-loader!tslint-loader'
+  },
   cssSourceMap: sourceMapEnabled,
   cacheBusting: config.dev.cacheBusting,
   transformToRequire: {
