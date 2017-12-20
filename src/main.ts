@@ -2,16 +2,18 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import App from './components/App.vue';
-// use vue router here
 import router from './router/index';
+import GlobalComponents from './globalComponents';
 
 Vue.config.productionTip = false;
+
+// register GlobalDirectives
+Vue.use(GlobalComponents);
+// register GlobalComponents
 
 const v = new Vue({
   el: '#app',
   components: { App },
-  template: `
-    <App/>
-  `,
-  router
+  router,
+  template: `<App/>`
 });
