@@ -29,6 +29,7 @@ export default class DashboardLayout extends Vue {
   html,body {
     margin: 0;
     height: 100vh;
+    font-family: "Roboto","Helvetica Neue",Arial,sans-serif;
   }
 
   *, *::before, *::after {
@@ -42,7 +43,6 @@ export default class DashboardLayout extends Vue {
 
   .aside {
     width: 260px;
-    background: pink;
   }
 
   .panel {
