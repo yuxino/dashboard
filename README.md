@@ -1,4 +1,5 @@
-# dashboard
+# vue-typescript-starter
+
 > A Vue.js project
 
 ## Build Setup
