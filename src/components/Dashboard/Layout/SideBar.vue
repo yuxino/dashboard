@@ -52,7 +52,7 @@ export default class SideBar extends Vue {
 <style lang="scss">
   .aside {
     position: relative;
-    background: #060606;
+    background: #272727;
 
     &::after {
       content: ' ';
@@ -92,7 +92,6 @@ export default class SideBar extends Vue {
           border-radius: 4px;
           color: #ffffff;
           font-size: 12px;
-          text-decoration: none;
           font-weight: 600;
           text-transform: uppercase;
         }
@@ -113,6 +112,12 @@ export default class SideBar extends Vue {
     a {
       color: #FFFFFF;
       background: rgba(255, 255, 255, 0.23);
+    }
+  }
+
+  @media only screen and (max-width: 768px){
+    .aside {
+      display: none;
     }
   }
 </style>

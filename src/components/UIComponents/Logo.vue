@@ -1,8 +1,8 @@
 <template>
-  <a class="logo-link" href="#">
+  <router-link class="logo-link" to="/admin">
     <img class="logo-img" src="/static/img/logo.png" alt="">
     {{title}}
-  </a>
+  </router-link>
 </template>
 
 <script lang="ts">
@@ -27,6 +27,9 @@ export default class SideBar extends Vue {
     margin: 0 20px;
     font-size: 18px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    &:hover,&:focus {
+      color: white;
+    }
     
     .logo-img {
       width: $size;

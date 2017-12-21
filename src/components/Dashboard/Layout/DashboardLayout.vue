@@ -36,6 +36,30 @@ export default class DashboardLayout extends Vue {
     box-sizing: border-box;
   }
 
+  a {
+    color: #1DC7EA;
+    text-decoration: none;
+    &:hover, &:focus {
+      color: #42d0ed;
+    }
+  }
+
+  .info {
+    color: #87CB16;
+  }
+
+  .warn {
+    color: #FF9500;
+  }
+
+  .error {
+    color: #FF4A55;
+  }
+
+  .primary {
+    color: #1D62F0;
+  }
+
   #App {
     display: flex;
     height: 100vh;
@@ -47,5 +71,7 @@ export default class DashboardLayout extends Vue {
 
   .panel {
     flex: 1;
+    background: rgba(203, 203, 210, 0.15);
+    overflow: auto;
   }
 </style>
