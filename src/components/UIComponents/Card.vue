@@ -56,10 +56,12 @@ export default class Card extends Vue {
     margin: 0px;
     font-size: 21px;
     line-height: 30px;
-    color:#636363;
+    color:#5d5454;
+    font-weight: 300;
   }
 
   .card-body {
+    overflow: auto;
     padding: 15px 15px 10px 15px;
   }
 

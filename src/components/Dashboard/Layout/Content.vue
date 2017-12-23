@@ -19,7 +19,7 @@ export default class Content extends Vue {
   .content {
     padding: 30px 15px;
     min-height: calc(100% - 100px);
-    overflow: auto;
+    overflow: hidden;
   }
 
   .fade-enter-active, .fade-leave-active {

@@ -36,6 +36,55 @@ export default class DashboardLayout extends Vue {
     box-sizing: border-box;
   }
 
+  @for $i from 1 to 6 {
+    h#{$i} {
+      font-weight: 300;
+    }
+  }
+
+  h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  blockquote {
+    border-left: 2px solid #3f8dab;
+    padding-left: 15px;
+    margin: 0;
+    line-height: 1.5
+  }
+
+  small {
+    font-size: 60%;
+    color: #9A9A9A;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
   a {
     color: #1DC7EA;
     text-decoration: none;
@@ -45,19 +94,23 @@ export default class DashboardLayout extends Vue {
   }
 
   .info {
-    color: #87CB16;
+    color: #87CB16 !important;
   }
 
   .warn {
-    color: #FF9500;
+    color: #FF9500 !important;
   }
 
   .error {
-    color: #FF4A55;
+    color: #FF4A55 !important;
   }
 
   .primary {
-    color: #1D62F0;
+    color: #1D62F0 !important;
+  }
+
+  .muted {
+    color: #868e96 !important;
   }
 
   #App {
