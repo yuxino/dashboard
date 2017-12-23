@@ -27,7 +27,25 @@ export default {
   }
 
   .card-header {
-    padding: 10px 15px;
+    padding: 10px 15px 0 15px;
+  }
+
+  .card-number {
+    text-align: right;
+  }
+
+  .card-category {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #9A9A9A;
+  }
+
+  .card-title {
+    margin: 0px;
+    font-size: 19px;
+    line-height: 30px;
+    color:#636363;
   }
 
   .card-body {
@@ -38,6 +56,7 @@ export default {
     padding: 0px 15px 10px 15px;
     color: #a9a9a9;
     font-size: 14px;
+    line-height: 1.5;
     hr {
       margin-top: 5px;
       margin-bottom: 10px;

@@ -18,7 +18,6 @@ export default class ContentFooter extends Vue {
 }
 </script>
 
-
 <style lang="scss">
   .content-footer {
     background: #ffffff;
@@ -44,5 +43,11 @@ export default class ContentFooter extends Vue {
     }
   }
 
-
+  @media only screen and (max-width: 768px){
+    .content-footer {
+      .copyright{
+        float: none;
+      }
+    }
+  }
 </style>

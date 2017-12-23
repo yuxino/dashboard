@@ -36,6 +36,7 @@ export default class SideBar extends Vue {
       height: $size;
       margin-right: 10px;
       vertical-align: middle;
+      image-rendering: -webkit-optimize-contrast;
     }
   }
 </style>
