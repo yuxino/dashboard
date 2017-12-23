@@ -1,0 +1,66 @@
+<template>
+  <table class="dashboard-table" :class="{color: color}">
+    <thead>
+      <th :key="index" v-for="(title,index) in titles">{{ title }}</th>
+    </thead>
+    <tbody>
+      <tr :key="index" v-for="(col,index) in data">
+        <td :key="index" v-for="(row, index) in col">
+            {{ row }}
+          </td>
+      </tr>
+    </tbody>
+  </table>
+</template>
+
+<script lang="ts">
+import Vue from 'vue';
+import Component from 'vue-class-component';
+
+@Component({
+  props: { 
+    color: { type: Boolean, default: false },
+    titles: { type: Array, default: [] },
+    data: { type: Array, default: [[]] }
+  }
+})
+export default class Table extends Vue {
+  name: 'Table';
+}
+</script>
+
+<style lang="scss">
+  .dashboard-table {
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 2px;
+    border-color: grey;
+
+    thead {
+      text-align: left;
+      border-top: 1px solid #e9ecef;
+    }
+
+    tr {
+      border-top: 1px solid #e9ecef;
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.075);
+      }
+    }
+
+    &.color {
+      tr {
+        &:nth-child(even){
+        background-color: rgba(0, 0, 0, 0.05);
+        }
+        &:nth-child(even){
+          background-color: rgba(0, 0, 0, 0.05);
+        }
+      }
+    }
+
+    th, td {
+      padding: 0.75rem;
+    }
+  }
+</style>

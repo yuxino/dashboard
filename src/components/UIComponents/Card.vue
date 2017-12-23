@@ -14,9 +14,13 @@
 </template>
 
 <script lang="ts">
-export default {
-  
-};
+import Vue from 'vue';
+import Component from 'vue-class-component';
+
+@Component
+export default class Card extends Vue {
+  name: 'Card';
+}
 </script>
 
 <style lang="scss">
@@ -24,6 +28,13 @@ export default {
     margin-bottom: 30px;
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.125);
+  }
+
+  .card-plain {
+    border: none !important;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
   }
 
   .card-header {
