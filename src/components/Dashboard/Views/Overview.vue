@@ -12,10 +12,10 @@
               <div class="col-7">
                 <div class="card-number">
                   <p class="card-category">
-                    Capacity
+                    {{ icon.title }}
                   </p>
                   <p class="card-title">
-                    105GB
+                    {{ icon.content }}
                   </p>
                 </div>
               </div>
@@ -83,12 +83,18 @@
           <card>
             <div slot="header">
               Todo items
-              <p class="card-category" style="margin: 5px 0">
-                Please finish that in this week
+              <p class="card-category" style="margin: 15px 0">
+                Please Backend development finish that in this week
               </p>
             </div>
             <div slot="body">
-              1. Fuck
+              <p>1. ...</p>
+              <p>2. ...</p>
+              <p>3. ...</p>
+              <p>4. ...</p>
+            </div>
+            <div slot="footer">
+              Updated now
             </div>
           </card>
         </div>
@@ -107,19 +113,27 @@ export default class Overview extends Vue {
   icons = [
       {
         icon: 'nc-chart',
-        color: 'warn '
+        color: 'warn ',
+        title: 'Capacity',
+        content: '105GB'
       },
       {
         icon: 'nc-light-3',
-        color: 'info'
+        color: 'info',
+        title: 'Revenue',
+        content: '$1,345'
       },
       {
         icon: 'nc-vector',
-        color: 'error'
+        color: 'error',
+        title: 'Errors',
+        content: '23'
       },
       {
         icon: 'nc-favourite-28',
-        color: 'primary'
+        color: 'primary',
+        title: 'Followers',
+        content: '+45'
       }
   ];
   mounted () {

@@ -43,7 +43,7 @@ export default {
 
   .card-title {
     margin: 0px;
-    font-size: 19px;
+    font-size: 21px;
     line-height: 30px;
     color:#636363;
   }
