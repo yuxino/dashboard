@@ -69,5 +69,6 @@ const routes = [
 
 // custom u routes in here
 export default new VueRouter({
-  routes
+  routes,
+  linkActiveClass: 'link-active'
 })

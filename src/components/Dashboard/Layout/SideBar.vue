@@ -70,7 +70,7 @@ export default {
       left: 0;
       right: 0;
       bottom: 0;
-      opacity: .33;
+      opacity: .23;
       background: url('/static/img/siderbar-bg.jpg');
       background-size: cover;
       background-repeat: no-repeat;
