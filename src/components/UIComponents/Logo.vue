@@ -5,13 +5,14 @@
   </router-link>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
-import Component from 'vue-class-component';
-
-@Component
-export default class SideBar extends Vue {
-  title: string = '喵帕斯';
+<script>
+export default {
+  name: 'SideBar',
+  data () {
+    return {
+      title: '喵帕斯'
+    }
+  }
 }
 </script>
 

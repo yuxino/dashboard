@@ -29,6 +29,18 @@
             <span>Typography</span>
           </a>
         </router-link>
+        <router-link tag="li" to="maps">
+          <a>
+            <i class="nc-icon nc-pin-3"></i>
+            <span>MAPS</span>
+          </a>
+        </router-link>
+        <router-link tag="li" to="icons">
+          <a>
+            <i class="nc-icon nc-atom"></i>
+            <span>Icons</span>
+          </a>
+        </router-link>
         <router-link tag="li" to="notifications">
           <a>
             <i class="nc-icon nc-bell-55"></i>
@@ -40,12 +52,9 @@
   </aside>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
-import Component from 'vue-class-component';
-
-@Component
-export default class SideBar extends Vue {
+<script>
+export default {
+  name: 'SideBar'
 }
 </script>
 

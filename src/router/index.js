@@ -1,19 +1,18 @@
-import Vue from 'vue';
-import VueRouter, { Location, Route, RouteConfig } from 'vue-router';
-import DashBoard from 'Layout/DashboardLayout.vue';
-import Content from 'Layout/Content.vue';
-import Overview from 'Views/Overview.vue';
-import User from 'Views/User.vue';
-import Icons from 'Views/Icons.vue';
-import Table from 'Views/Table.vue';
-import Typography from 'Views/Typography.vue';
-import Notifications from 'Views/Notifications.vue';
-import NotFoundPage from '@/components/GeneralViews/NotFoundPage.vue';
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import DashBoard from 'Layout/DashboardLayout.vue'
+import Overview from 'Views/Overview.vue'
+import User from 'Views/User.vue'
+import Icons from 'Views/Icons.vue'
+import Maps from 'Views/Maps.vue'
+import Table from 'Views/Table.vue'
+import Typography from 'Views/Typography.vue'
+import Notifications from 'Views/Notifications.vue'
+import NotFoundPage from '@/components/GeneralViews/NotFoundPage.vue'
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
-// custom u routes in here
-export const createRoutes: () => RouteConfig[] = () => [
+const routes = [
   {
     path: '/',
     component: DashBoard,
@@ -40,6 +39,11 @@ export const createRoutes: () => RouteConfig[] = () => [
         component: Icons
       },
       {
+        path: 'maps',
+        name: 'Maps',
+        component: Maps
+      },
+      {
         path: 'table',
         name: 'Table',
         component: Table
@@ -61,6 +65,9 @@ export const createRoutes: () => RouteConfig[] = () => [
     name: '404',
     component: NotFoundPage
   }
-];
+]
 
-export default new VueRouter({ mode: 'history', routes: createRoutes(), linkActiveClass: 'link-active' });
+// custom u routes in here
+export default new VueRouter({
+  routes
+})

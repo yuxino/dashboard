@@ -13,19 +13,15 @@
   </table>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
-import Component from 'vue-class-component';
+<script>
 
-@Component({
-  props: { 
+export default {
+  name: 'Table',
+  props: {
     color: { type: Boolean, default: false },
     titles: { type: Array, default: [] },
     data: { type: Array, default: [[]] }
   }
-})
-export default class Table extends Vue {
-  name: 'Table';
 }
 </script>
 

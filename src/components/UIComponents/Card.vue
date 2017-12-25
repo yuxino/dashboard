@@ -13,13 +13,9 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
-import Component from 'vue-class-component';
-
-@Component
-export default class Card extends Vue {
-  name: 'Card';
+<script>
+export default {
+  name: 'Card'
 }
 </script>
 
@@ -54,7 +50,7 @@ export default class Card extends Vue {
 
   .card-title {
     margin: 0px;
-    font-size: 21px;
+    font-size: 22px;
     line-height: 30px;
     color:#5d5454;
     font-weight: 300;

@@ -9,19 +9,15 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
-import Component from 'vue-class-component';
-import SideBar from './SideBar.vue';
-import TopNavBar from './TopNavbar.vue';
-import DashboardContent from './Content.vue';
-import DashboardContentFooter from './ContentFooter.vue';
+<script>
+import SideBar from './SideBar'
+import TopNavBar from './TopNavbar'
+import DashboardContent from './Content'
+import DashboardContentFooter from './ContentFooter'
 
-@Component({
+export default {
+  name: 'dashboard',
   components: { SideBar, TopNavBar, DashboardContent, DashboardContentFooter }
-})
-export default class DashboardLayout extends Vue {
-  
 }
 </script>
 
@@ -75,7 +71,7 @@ export default class DashboardLayout extends Vue {
     border-left: 2px solid #3f8dab;
     padding-left: 15px;
     margin: 0;
-    line-height: 1.5
+    line-height: 1.5;
   }
 
   small {
