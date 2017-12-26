@@ -1,18 +1,20 @@
 <template>
-  <div class="navbar">
-    <router-link to="/admin" class="navbar-band">
-      DashBoard
-    </router-link>
-    <div class="navbar-nav">
-      <router-link to="/admin" class="navbar-link">
-        Account
+    <div class="navbar">
+     <div class="container-fluid">
+      <router-link to="/admin" class="navbar-band">
+        DashBoard
       </router-link>
-      <router-link to="/admin" class="navbar-link">
-        Dropdown
-      </router-link>
-      <router-link to="/admin" class="navbar-link">
-        Log out
-      </router-link>
+      <div class="navbar-nav">
+        <router-link to="/admin" class="navbar-link">
+          Account
+        </router-link>
+        <router-link to="/admin" class="navbar-link">
+          Dropdown
+        </router-link>
+        <router-link to="/admin" class="navbar-link">
+          Log out
+        </router-link>
+      </div>
     </div>
   </div>
 </template>

@@ -1,5 +1,8 @@
 <template>
   <div class="card">
+    <div class="card-image" v-if="$slots.image">
+      <slot name="image"></slot>
+    </div>
     <div class="card-header" v-if="$slots.header">
       <slot name="header"></slot>
     </div>
@@ -24,6 +27,7 @@ export default {
     margin-bottom: 30px;
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 4px;
   }
 
   .card-plain {
@@ -31,6 +35,14 @@ export default {
     background-color: transparent;
     box-shadow: none;
     border-radius: 0;
+  }
+
+  .card-image {
+    height: 110px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
   }
 
   .card-header {
@@ -57,7 +69,6 @@ export default {
   }
 
   .card-body {
-    overflow: auto;
     padding: 15px 15px 10px 15px;
   }
 

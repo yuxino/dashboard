@@ -1,20 +1,22 @@
 <template>
   <div>
-    <card>
-      <div slot="header" class="card-title">
-        Striped Table with Hover
-        <p class="card-category">Here is a subtitle for this table</p>
-      </div>
-      <d-table slot="body" :color="true" :titles="titles" :data="data"></d-table>
-    </card>
+    <div class="container-fluid">
+      <card>
+        <div slot="header" class="card-title">
+          Striped Table with Hover
+          <p class="card-category">Here is a subtitle for this table</p>
+        </div>
+        <d-table slot="body" :color="true" :titles="titles" :data="data"></d-table>
+      </card>
 
-    <card class="card-plain">
-      <div slot="header" class="card-title">
-        Striped Table with Hover
-        <p class="card-category">Here is a subtitle for this table</p>
-      </div>
-      <d-table slot="body" :titles="titles" :data="data"></d-table>
-    </card>
+      <card class="card-plain">
+        <div slot="header" class="card-title">
+          Striped Table with Hover
+          <p class="card-category">Here is a subtitle for this table</p>
+        </div>
+        <d-table slot="body" :titles="titles" :data="data"></d-table>
+      </card>
+    </div>
   </div>
 </template>
 

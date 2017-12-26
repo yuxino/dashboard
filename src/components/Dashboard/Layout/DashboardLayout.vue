@@ -75,7 +75,7 @@ export default {
   }
 
   small {
-    font-size: 60%;
+    font-size: 80%;
     color: #9A9A9A;
     font-weight: 300;
     line-height: 1.5;
