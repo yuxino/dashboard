@@ -37,35 +37,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-  .input-group {
-    margin-bottom: 25px;
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-size: 12px;
-      color: #9a9a9a;
-      text-transform: uppercase;
-    }
-    input,textarea {
-      width: 100%;
-      padding: 8px 12px;
-      border-radius: 4px;
-      outline: none;
-      border: 1px solid #e3e3e3;
-      font-size: 16px;
-      color: #565656;
-      font-family: inherit;
-      &[disabled]{
-        background-color: #f5f5f5;
-        color: #888;
-        cursor: not-allowed;
-      }
-    }
-    textarea {
-      height: 40px;
-      resize: vertical;
-    }
-  }
-</style>

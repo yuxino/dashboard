@@ -1,0 +1,17 @@
+.maps {
+  padding: 0;
+  width: 100%;
+  height: calc(100% - 100px);
+  .amap-demo {
+    width: 100%;
+  }
+  .amap-info-content {
+    font-size: 14px;
+    color: #585757;
+  }
+  .amap-info-close {
+    right: 2px !important;
+    color: #42b983;
+    font-weight: 300;
+  }
+}

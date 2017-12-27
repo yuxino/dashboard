@@ -1,5 +1,5 @@
 <template>
-  <div class="fuck">
+  <div class="maps">
     <el-amap vid="amap" :zoom="zoom" :center="center" class="amap-demo">
       <el-amap-info-window :key="index" 
                             v-for="(window,index) in windows" 
@@ -40,23 +40,3 @@ export default {
   }
 }
 </script>
-
-<style>
-  .fuck {
-    padding: 0;
-    width: 100%;
-    height: calc(100% - 100px);
-  }
-  .amap-demo {
-    width: 100%;
-  }
-  .amap-info-content {
-    font-size: 14px;
-    color: #585757;
-  }
-  .amap-info-close {
-    right: 2px !important;
-    color: #42b983;
-    font-weight: 300;
-  }
-</style>

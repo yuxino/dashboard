@@ -1,0 +1,17 @@
+@import '../common/variables';
+
+.typography {
+  .typo-line {
+    padding-left: 120px;
+    margin-bottom: $typography-typo-line-margin;
+    position: relative;
+  }
+  .category {
+    position: absolute;
+    left: 0; 
+    font-size: $typography-typo-category-fontSize;
+    transform: translateY(-50%);
+    top: 50%;
+    font-weight: 300;
+  }
+}

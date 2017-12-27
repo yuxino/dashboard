@@ -1,0 +1,36 @@
+@import '../common/variables';
+
+.dashboard-table {
+  overflow-y: hidden;
+  overflow-x: auto;
+   .table-container {
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: $table-contaienr-border-spacing;
+    border-color: $table-contaienr-border-color;
+
+    thead {
+      text-align: left;
+      border-top: 1px solid $table-contaienr-thead-border-color;
+    }
+
+    tr {
+      border-top: 1px solid $table-contaienr-thead-border-color;
+      &:hover{
+        background-color: $table-contaienr-thead-border-hover-color;
+      }
+    }
+
+    &.color {
+      tr {
+        &:nth-child(even){
+        background-color: $table-container-with-color-even;
+        }
+      }
+    }
+
+    th, td {
+      padding: $table-container-th-td-padding;
+    }
+  }
+}

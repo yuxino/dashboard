@@ -67,21 +67,3 @@
     </card>
   </div>
 </template>
-
-<style lang="scss">
-  .typography {
-    .typo-line {
-      padding-left: 120px;
-      margin-bottom: 45px;
-      position: relative;
-    }
-    .category {
-      position: absolute;
-      left: 0; 
-      font-size: 16px;
-      transform: translateY(-50%);
-      top: 50%;
-      font-weight: 300;
-    }
-  }
-</style>

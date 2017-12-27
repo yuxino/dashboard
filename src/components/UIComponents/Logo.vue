@@ -15,29 +15,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-  $size: 40px;
-
-  .logo-link {
-    line-height: $size;
-    color: white;
-    display: block;
-    text-decoration: none;
-    padding: 10px 5px;
-    margin: 0 20px;
-    font-size: 18px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    &:hover,&:focus {
-      color: white;
-    }
-    
-    .logo-img {
-      width: $size;
-      height: $size;
-      margin-right: 10px;
-      vertical-align: middle;
-      image-rendering: -webkit-optimize-contrast;
-    }
-  }
-</style>

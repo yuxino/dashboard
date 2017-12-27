@@ -26,6 +26,13 @@ $tip-colors: (
   muted: #868e96
 );
 
+// -------------------------
+// UIComponents here ....
+// -------------------------
+
+// Logo 
+$logo-size: 40px;
+
 // SideBar
 $sidebar-bg: #272727;
 $sidebar-bg-image: url('/static/img/sidebar-bg.jpg');
@@ -60,8 +67,8 @@ $card-footer-padding: 0px 15px 10px 15px;
 // content navbar and footer is using this variable
 $content-top-bottom-bg: rgba(255, 255, 255, 0.96);
 $content-cutOff-color: rgba(0, 0, 0, 0.1);
+$content-padding: 30px 15px;
 $content-transition-speed: .1s;
-
 
 // TopNavBar
 $topNavBar-color: #888888;
@@ -72,6 +79,41 @@ $topNavBar-height: 50px;
 $topNavBar-padding-top-bottom: 5px;
 $topNavBar-padding-left-right: 15px;
 
+// Table
+$table-contaienr-border-color: grey;
+$table-contaienr-border-spacing: 2px;
+$table-contaienr-thead-border-color: #e9ecef;
+$table-contaienr-thead-border-hover-color: rgba(0, 0, 0, 0.075);
+$table-container-with-color-even: rgba(0, 0, 0, 0.05);
+$table-container-th-td-padding: 0.75rem;
+
+// InputGroup
+$inputGroup-color: #9a9a9a;
+$inputGroup-input-color: #565656;
+$inputGroup-input-disabled-bg: #f5f5f5;
+$inputGroup-input-disabled-color: #888888;
+$inputGroup-textarea-height: 40px;
+$inputGroup-border-color: #e3e3e3;
+
+// -------------------------
+// Layout and views ...
+// -------------------------
+
 // ContentFooter
 $contentFooter-link-color: #9A9A9A;
 $contentFooter-copyright-color: #777777;
+
+// UserProfile
+$userProfile-btn-color: #ffffff;
+$userProfile-btn-bg: #1dc7ea;
+$userProfile-btn-hover-bg: #42d0ed;
+$userPrifle-author-color: #eeeeee;
+$userPrifle-author-description-fontSize: 14px;
+$userPrifle-author-description-color: #333333;
+
+// Overview
+$overview-icon-size: 47px;
+
+// typography
+$typography-typo-line-margin: 45px;
+$typography-typo-category-fontSize: 16px;

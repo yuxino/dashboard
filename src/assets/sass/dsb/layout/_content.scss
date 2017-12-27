@@ -1,11 +1,11 @@
 .content {
-  padding: 30px 15px;
+  padding: $content-padding;
   min-height: calc(100% - 100px);
   overflow: hidden;
 }
 
 .fade-enter-active, .fade-leave-active {
-  transition: opacity .1s;
+  transition: opacity $content-transition-speed;
 }
 
 .fade-enter, .fade-leave-to {

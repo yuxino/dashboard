@@ -1,26 +1,3 @@
-.btn-container {
-  &::after{
-    content: "";
-    clear: both;
-    display: block;
-  }
-  .btn {
-    padding: 10px;
-    outline: none;
-    color: #fff;
-    background: #1dc7ea;
-    border: 1px solid #1dc7ea;
-    border-radius: 3px;
-    font-size: 15px;
-    line-height: 1.5;
-    cursor: pointer;
-    float: right;
-    &:hover{
-      background-color: #42d0ed;
-    }
-  }
-}
-
 .author {
   text-align: center;
   text-transform: none;
@@ -28,11 +5,11 @@
   img {
     width: 124px;
     height: 124px;
-    border: 5px solid #eee;
     border-radius: 50%;
+    border: 5px solid $userPrifle-author-color;
   }
   .description{
-    font-size: 14px;
-    color: #333;
+    font-size: $userPrifle-author-description-fontSize;
+    color: $userPrifle-author-description-color;
   }
 }

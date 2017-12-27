@@ -1,0 +1,12 @@
+@import '../common/variables';
+
+.overview {
+  .overview-icon-container {
+    text-align: center
+  }
+  
+  .overview-icon {
+    font-size: $overview-icon-size;
+    line-height: 60px;
+  }
+}

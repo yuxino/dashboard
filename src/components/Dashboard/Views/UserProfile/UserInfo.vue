@@ -3,7 +3,7 @@
     <div slot="header" class="card-title">
       Edit Profile
     </div>
-    <div slot="body">
+    <div slot="body" class="userCard">
       <form>
         <div class="row">
           <div class="col-md-5">
@@ -85,9 +85,10 @@
             </div>
           </div>
         </div>
-        <div class="btn-container">
-          <button class="btn" @click="updateProfile" type="submit">Update Profile</button>
-        </div>
+        <button class="userCard-btn"
+                @click="updateProfile"
+                type="submit">Update Profile
+        </button>
       </form>
     </div>
   </card>
@@ -117,7 +118,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-  
-</style>

@@ -245,16 +245,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-  .overview {
-    .overview-icon-container {
-      text-align: center
-    }
-    
-    .overview-icon {
-      font-size: 47px;
-      line-height: 60px;
-    }
-  }
-</style>

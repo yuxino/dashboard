@@ -1,0 +1,23 @@
+@import '../common/variables';
+
+.logo-link {
+  line-height: $logo-size;
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 10px 5px;
+  margin: 0 20px;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  &:hover,&:focus {
+    color: white;
+  }
+  
+  .logo-img {
+    width: $logo-size;
+    height: $logo-size;
+    margin-right: 10px;
+    vertical-align: middle;
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
