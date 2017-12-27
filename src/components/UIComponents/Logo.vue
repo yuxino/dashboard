@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'SideBar',
+  name: 'Logo',
   data () {
     return {
       title: '喵帕斯'

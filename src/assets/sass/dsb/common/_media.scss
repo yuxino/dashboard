@@ -1,0 +1,25 @@
+@import '../common/variables';
+
+@media only screen and (max-width: 768px){
+  .sidebar {
+    transform: translateX(calc(#{$app-width} + #{$sidebar-width}));
+    position: absolute;
+    min-height: #{$app-height};
+    transition: .5s ease-in-out;
+    z-index: 10;
+    // display: none;
+    &.show {
+      transform: translateX(calc(#{$app-width} - #{$sidebar-width}));
+    }
+  }
+
+  .content-footer {
+    .copyright{
+      float: none;
+    }
+  }
+
+  .topNavbar-nav {
+    display: none;
+  }
+}

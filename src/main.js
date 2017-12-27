@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import GlobalComponents from './globalComponents'
+import '@/assets/sass/dashboard.scss'
 
 Vue.config.productionTip = false
 

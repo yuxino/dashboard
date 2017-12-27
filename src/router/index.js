@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import DashBoard from 'Layout/DashboardLayout.vue'
-import Overview from 'Views/Overview.vue'
-import User from 'Views/User.vue'
-import Icons from 'Views/Icons.vue'
-import Maps from 'Views/Maps.vue'
-import Table from 'Views/Table.vue'
-import Typography from 'Views/Typography.vue'
-import Notifications from 'Views/Notifications.vue'
-import NotFoundPage from '@/components/GeneralViews/NotFoundPage.vue'
+import DashBoard from 'Layout/DashboardLayout'
+import Overview from 'Views/Overview'
+import UserProfile from 'Views/UserProfile'
+import Icons from 'Views/Icons'
+import Maps from 'Views/Maps'
+import Table from 'Views/Table'
+import Typography from 'Views/Typography'
+import Notifications from 'Views/Notifications'
+import NotFoundPage from '@/components/GeneralViews/NotFoundPage'
 
 Vue.use(VueRouter)
 
@@ -30,8 +30,8 @@ const routes = [
       },
       {
         path: 'user',
-        name: 'User',
-        component: User
+        name: 'UserProfile',
+        component: UserProfile
       },
       {
         path: 'icons',

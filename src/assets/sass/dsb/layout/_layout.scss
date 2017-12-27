@@ -1,0 +1,20 @@
+@import '../common/variables';
+
+html,body {
+  margin: 0;
+  height: $app-height;
+  overflow: hidden;
+  font-family: $font;
+}
+
+#App {
+  width: $app-width;
+  height: $app-height;
+  display: flex;
+}
+
+.panel {
+  flex: 1;
+  background: $plane-bg;
+  overflow: auto;
+}

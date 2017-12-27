@@ -1,0 +1,77 @@
+// Main font style
+$font: "Roboto","Helvetica Neue",Arial,sans-serif;
+$line-height: 1.5;
+
+// Layout style
+$app-width: 100vw;
+$app-height: 100vh;
+$sidebar-width: 260px;
+$plane-bg: rgba(203, 203, 210, 0.15);
+
+// Base style
+$heading-fontSize: 52px 36px 28px 22px 16px 12px;
+$p-fontSize: 16px;
+$small-fontSize: 80%;
+$small-color: #9A9A9A;
+$blockquote-border-color: #3f8dab;
+$link-color: #1DC7EA;
+$link-active-color: #42d0ed;
+
+// Base color
+$tip-colors: (
+  info: #87CB16,
+  warn: #FF9500,
+  error: #FF4A55,
+  primary: #1D62F0,
+  muted: #868e96
+);
+
+// SideBar
+$sidebar-bg: #272727;
+$sidebar-bg-image: url('/static/img/sidebar-bg.jpg');
+$sidebarLink-color: #FFFFFF;
+$sidebarLink-fontSize: 12px;
+$sidebarLink-padding: 12px 15px;
+$sidebarLink-margin: 5px 15px;
+$sidebarLink-border-ridus: 4px;
+$sidebarLink-hover-bg: rgba(255, 255, 255, 0.13);
+$sidebarLink-active-bg: rgba(255, 255, 255, 0.23);
+
+// Card
+$card-bg: #ffffff;
+$card-border: 1px solid rgba(0, 0, 0, 0.125);
+$card-title-color: #5d5454;
+$card-category-color: #9A9A9A;
+$card-footer-color: #a9a9a9;
+$card-footer-line-bg: rgba(0, 0, 0, 0.1);
+
+$card-image-width: 100%;
+$card-image-height: 110px;
+$card-border-radius: 4px;
+
+$card-title-fontSize: 22px;
+$card-category-fontSize: 14px;
+$card-footer-fontSize: 14px;
+
+$card-header-padding: 10px 15px 0 15px;
+$card-body-padding: 15px 15px 10px 15px;
+$card-footer-padding: 0px 15px 10px 15px;
+
+// content navbar and footer is using this variable
+$content-top-bottom-bg: rgba(255, 255, 255, 0.96);
+$content-cutOff-color: rgba(0, 0, 0, 0.1);
+$content-transition-speed: .1s;
+
+
+// TopNavBar
+$topNavBar-color: #888888;
+$topNavBar-band-hover-color: #5e5e5e;
+$topNavBar-link-active-color: #42d0ed;
+$topNavBar-fontSize: 16px;
+$topNavBar-height: 50px;
+$topNavBar-padding-top-bottom: 5px;
+$topNavBar-padding-left-right: 15px;
+
+// ContentFooter
+$contentFooter-link-color: #9A9A9A;
+$contentFooter-copyright-color: #777777;

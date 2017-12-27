@@ -12,19 +12,3 @@ export default {
   name: 'Content'
 }
 </script>
-
-<style lang="scss">
-  .content {
-    padding: 30px 15px;
-    min-height: calc(100% - 100px);
-    overflow: hidden;
-  }
-
-  .fade-enter-active, .fade-leave-active {
-    transition: opacity .1s
-  }
-
-  .fade-enter, .fade-leave-to {
-    opacity: 0
-  }
-</style>

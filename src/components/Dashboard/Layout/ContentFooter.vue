@@ -15,37 +15,3 @@ export default {
   name: 'ContentFooter'
 }
 </script>
-
-<style lang="scss">
-  .content-footer {
-    background: #ffffff;
-    min-height: 50px;
-    line-height: 50px;
-    font-size: 14px;
-    padding: 0 15px;  
-
-    .content-footer-link {
-      color: #9A9A9A;
-      text-decoration: none;
-    }
-    
-    .copyright {
-      float: right;
-      color: #777777;
-    }
-
-    &::after {
-      content: '';
-      display: block;
-      clear: both;
-    }
-  }
-
-  @media only screen and (max-width: 768px){
-    .content-footer {
-      .copyright{
-        float: none;
-      }
-    }
-  }
-</style>

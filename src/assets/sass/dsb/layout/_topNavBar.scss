@@ -1,0 +1,30 @@
+.topNavbar {
+  border: 0;
+  font-size: $topNavBar-fontSize;
+  border-radius: 0;
+  height: $topNavBar-height;
+  line-height: $topNavBar-height - $topNavBar-padding-top-bottom  * 2;
+  padding: $topNavBar-padding-top-bottom $topNavBar-padding-left-right;
+  background-color: $content-top-bottom-bg;
+  border-bottom: 1px solid $content-cutOff-color;
+
+  .topNavbar-band {
+    font-size: 20px;
+    color: $topNavBar-color;
+    &:hover {
+      color: $topNavBar-band-hover-color;
+    }
+  }
+
+  .topNavbar-nav {
+    float: right;
+  }
+
+  .topNavbar-link {
+    color: $topNavBar-color;
+    margin-right: 20px;
+    &:hover, &:focus {
+      color: $topNavBar-link-active-color;
+    }
+  }
+}
