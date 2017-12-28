@@ -1,15 +1,26 @@
-.author {
-  text-align: center;
-  text-transform: none;
-  margin-top: -70px;
-  img {
-    width: 124px;
-    height: 124px;
-    border-radius: 50%;
-    border: 5px solid $userPrifle-author-color;
+.userInfo {
+  .author {
+    text-align: center;
+    text-transform: none;
+    margin-top: -70px;
+    img {
+      width: 124px;
+      height: 124px;
+      border-radius: 50%;
+      border: 5px solid $userInfo-author-color;
+    }
+    .description{
+      font-size: $userInfo-author-description-fontSize;
+      color: $userInfo-author-description-color;
+    }
   }
-  .description{
-    font-size: $userPrifle-author-description-fontSize;
-    color: $userPrifle-author-description-color;
+  
+  .social-icon {
+    color: $userInfo-social-icon-color;
+    font-size: 16px;
+    padding: 8px 10px;
+    &:hover {
+      color: $userInfo-social-icon-hover-color;
+    }
   }
 }

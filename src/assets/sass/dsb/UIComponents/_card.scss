@@ -1,5 +1,3 @@
-@import '../common/variables';
-
 .card {
   margin-bottom: 30px;
   background: $card-bg;
@@ -56,12 +54,18 @@
     font-size: $card-footer-fontSize;
 
     &::before {
+      width: $card-footer-line-width;
+      margin: auto;
       content: ' ';
       display: block;
       height: 1px;
       margin-top: 5px;
       margin-bottom: 10px;
       background: $card-footer-line-bg;
+    }
+
+    i {
+      margin-right: 5px;
     }
   }
 }

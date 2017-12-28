@@ -1,5 +1,3 @@
-@import '../common/variables';
-
 @media only screen and (max-width: 768px){
   .sidebar {
     transform: translateX(calc(#{$app-width} + #{$sidebar-width}));

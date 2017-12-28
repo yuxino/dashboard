@@ -1,5 +1,5 @@
 <template>
-  <card>
+  <card class="userInfo">
     <img slot="image" src="/static/img/bg.jpg" alt="wife">
     <div slot="body" class="author">
       <img src="/static/img/logo.png" alt="background">
@@ -15,7 +15,15 @@
       </p>
     </div>
     <div slot="footer">
-      Find me in this socical
+      <a class="social-icon" href="https://github.com/Nbsaw">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <a class="social-icon" href="https://twitter.com/nbsaw">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a class="social-icon" href="https://plus.google.com/u/0/100353767380086686805">
+        <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+      </a>
     </div>
   </card>
 </template>

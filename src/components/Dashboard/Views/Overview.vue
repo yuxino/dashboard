@@ -21,7 +21,8 @@
               </div>
             </div>
             <div slot="footer">
-              Updated now
+              <i class="fa" :class="icon.font"></i>
+              {{ icon.tip }}
             </div>
           </card>
         </div>
@@ -40,7 +41,8 @@
              <canvas id="Users-Behavior"></canvas>
             </div>
             <div slot="footer">
-              Updated now
+              <i class="fa fa-refresh"></i>
+              Updated 3 minutes ago
             </div>
           </card>
         </div>
@@ -56,7 +58,8 @@
              <canvas id="Today-Revenue"></canvas>
             </div>
             <div slot="footer">
-              Updated now
+              <i class="fa fa-clock-o"></i>
+              Campaign sent 2 days ago
             </div>
           </card>
         </div>
@@ -75,7 +78,8 @@
              <canvas id="Sales"></canvas>
             </div>
             <div slot="footer">
-              Updated now
+              <i class="fa fa-check"></i>
+              Data information certified
             </div>
           </card>
         </div>
@@ -94,7 +98,8 @@
               <p>4. ...</p>
             </div>
             <div slot="footer">
-              Updated now
+              <i class="fa fa-refresh"></i>
+              updated 3 minutes ago
             </div>
           </card>
         </div>
@@ -114,25 +119,33 @@ export default {
           icon: 'nc-chart',
           color: 'warn ',
           title: 'Capacity',
-          content: '105GB'
+          content: '105GB',
+          font: 'fa-refresh',
+          tip: 'Update now'
         },
         {
           icon: 'nc-light-3',
           color: 'info',
           title: 'Revenue',
-          content: '$1,345'
+          content: '$1,345',
+          font: 'fa-calendar-o',
+          tip: 'Last day'
         },
         {
           icon: 'nc-vector',
           color: 'error',
           title: 'Errors',
-          content: '23'
+          content: '23',
+          font: 'fa-clock-o',
+          tip: 'Last week'
         },
         {
           icon: 'nc-favourite-28',
           color: 'primary',
           title: 'Followers',
-          content: '+45'
+          content: '+45',
+          font: 'fa-refresh',
+          tip: '05:23 PM'
         }
       ]
     }

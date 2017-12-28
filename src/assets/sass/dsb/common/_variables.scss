@@ -32,6 +32,7 @@ $tip-colors: (
 
 // Logo 
 $logo-size: 40px;
+$logo-color: #ffffff;
 
 // SideBar
 $sidebar-bg: #272727;
@@ -60,6 +61,7 @@ $card-border-radius: 4px;
 $card-title-fontSize: 22px;
 $card-category-fontSize: 14px;
 $card-footer-fontSize: 14px;
+$card-footer-line-width: 85%;
 
 $card-header-padding: 10px 15px 0 15px;
 $card-body-padding: 15px 15px 10px 15px;
@@ -109,9 +111,13 @@ $contentFooter-copyright-color: #777777;
 $userProfile-btn-color: #ffffff;
 $userProfile-btn-bg: #1dc7ea;
 $userProfile-btn-hover-bg: #42d0ed;
-$userPrifle-author-color: #eeeeee;
-$userPrifle-author-description-fontSize: 14px;
-$userPrifle-author-description-color: #333333;
+
+// UserInfo
+$userInfo-author-color: #eeeeee;
+$userInfo-author-description-fontSize: 14px;
+$userInfo-author-description-color: #333333;
+$userInfo-social-icon-color: #a0a0a0;
+$userInfo-social-icon-hover-color: #777777;
 
 // Overview
 $overview-icon-size: 47px;
@@ -119,3 +125,6 @@ $overview-icon-size: 47px;
 // typography
 $typography-typo-line-margin: 45px;
 $typography-typo-category-fontSize: 16px;
+
+// Maps
+$maps-close-color: #42b983;

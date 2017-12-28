@@ -1,8 +1,6 @@
-@import '../common/variables';
-
 .logo-link {
   line-height: $logo-size;
-  color: white;
+  color: $logo-color;
   display: block;
   text-decoration: none;
   padding: 10px 5px;
@@ -10,7 +8,7 @@
   font-size: 18px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   &:hover,&:focus {
-    color: white;
+    color: $logo-color;
   }
   
   .logo-img {
