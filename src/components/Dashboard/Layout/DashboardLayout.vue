@@ -1,7 +1,7 @@
 <template>
-  <div id="App">
-    <side-bar :display="display"></side-bar>
-    <div class="panel">
+  <div id="App" :class="{ move : display }" >
+    <side-bar></side-bar>
+    <div class="panel" >
       <top-nav-bar :display="display" @click="sideBarDisplay"></top-nav-bar>
       <dashboard-content></dashboard-content>
       <dashboard-content-footer></dashboard-content-footer>

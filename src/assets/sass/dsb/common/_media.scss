@@ -1,13 +1,15 @@
 @media only screen and (max-width: 768px){
   .sidebar {
-    transform: translateX(calc(#{$app-width} + #{$sidebar-width}));
+    transform: translateX(#{$app-width});
     position: absolute;
     min-height: #{$app-height};
-    transition: .5s ease-in-out;
     z-index: 10;
-    // display: none;
-    &.show {
-      transform: translateX(calc(#{$app-width} - #{$sidebar-width}));
+  }
+
+  #App {
+    transition: all .5s cubic-bezier(.685,.0473,.346,1);
+    &.move {
+      transform: translateX(-#{$sidebar-width});
     }
   }
 
