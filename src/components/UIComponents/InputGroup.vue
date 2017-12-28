@@ -14,26 +14,11 @@
 export default {
   name: 'InputGroup',
   props: {
-    label: {
-      type: String,
-      default: ''
-    },
-    disabled: {
-      type: Boolean,
-      default: false
-    },
-    placeholder: {
-      type: String,
-      default: ''
-    },
-    value: {
-      type: [String, Number],
-      default: ''
-    },
-    type: {
-      type: String,
-      default: 'text'
-    }
+    label: { type: String, default: '' },
+    disabled: { type: Boolean, default: false },
+    placeholder: { type: String, default: '' },
+    value: { type: [String, Number], default: '' },
+    type: { type: String, default: 'text' }
   }
 }
 </script>

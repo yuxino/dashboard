@@ -47,10 +47,11 @@ $sidebarLink-active-bg: rgba(255, 255, 255, 0.23);
 // Card
 $card-bg: #ffffff;
 $card-border: 1px solid rgba(0, 0, 0, 0.125);
-$card-title-color: #5d5454;
+$card-title-color: #333333;
 $card-category-color: #9A9A9A;
 $card-footer-color: #a9a9a9;
 $card-footer-line-bg: rgba(0, 0, 0, 0.1);
+$card-category-margin: 0;
 
 $card-image-width: 100%;
 $card-image-height: 110px;
@@ -78,6 +79,7 @@ $topNavBar-fontSize: 16px;
 $topNavBar-height: 50px;
 $topNavBar-padding-top-bottom: 5px;
 $topNavBar-padding-left-right: 15px;
+$topNavBar-mobile-menu-size: 18px;
 
 // Table
 $table-contaienr-border-color: grey;

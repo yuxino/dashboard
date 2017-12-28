@@ -1,7 +1,9 @@
+// Custom Components
 import Logo from 'UI/Logo'
 import Card from 'UI/Card'
 import Table from 'UI/Table'
 import InputGroup from 'UI/InputGroup'
+// Plugin
 
 export default {
   install (Vue) {

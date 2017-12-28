@@ -19,7 +19,13 @@
     }
   }
 
-  .topNavbar-nav {
-    display: none;
+  .topNavbar {
+    .topNavbar-nav {
+      display: none;
+    }
+    .mobile-menu {
+      display: unset;
+      float: right; 
+    }
   }
 }

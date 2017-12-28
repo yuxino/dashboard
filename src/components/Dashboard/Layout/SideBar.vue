@@ -1,5 +1,5 @@
 <template>
-  <aside class="sidebar">
+  <aside class="sidebar" :class="{show : display}">
     <div class="sidebar-container">
       <logo></logo>
       <!--Something in Mobile-->
@@ -21,6 +21,7 @@ import SideBarLink from './SideBarLink'
 export default {
   name: 'SideBar',
   components: { SideBarLink },
+  props: { display: { type: Boolean } },
   data () {
     return {
       linkList: [

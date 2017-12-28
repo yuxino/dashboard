@@ -31,8 +31,8 @@
   }
 
   .card-category {
-    margin: 0 0 5px 0;
     font-weight: 400;
+    margin: $card-category-margin;
     font-size: $card-category-fontSize;
     color: $card-category-color;
   }
