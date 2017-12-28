@@ -45,14 +45,14 @@ export default {
           content: 'Typography'
         },
         {
-          icon: 'nc-pin-3',
-          to: 'maps',
-          content: 'Maps'
-        },
-        {
           icon: 'nc-atom',
           to: 'icons',
           content: 'Icons'
+        },
+        {
+          icon: 'nc-pin-3',
+          to: 'maps',
+          content: 'Maps'
         },
         {
           icon: 'nc-bell-55',

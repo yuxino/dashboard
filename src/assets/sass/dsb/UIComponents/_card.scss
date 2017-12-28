@@ -54,7 +54,6 @@
     font-size: $card-footer-fontSize;
 
     &::before {
-      width: $card-footer-line-width;
       margin: auto;
       content: ' ';
       display: block;

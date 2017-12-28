@@ -11,6 +11,8 @@ $plane-bg: rgba(203, 203, 210, 0.15);
 // Base style
 $heading-fontSize: 52px 36px 28px 22px 16px 12px;
 $p-fontSize: 16px;
+$p-margin: 0 0 1rem 0;
+$p-fontWeight: 300;
 $small-fontSize: 80%;
 $small-color: #9A9A9A;
 $blockquote-border-color: #3f8dab;
@@ -61,7 +63,6 @@ $card-border-radius: 4px;
 $card-title-fontSize: 22px;
 $card-category-fontSize: 14px;
 $card-footer-fontSize: 14px;
-$card-footer-line-width: 85%;
 
 $card-header-padding: 10px 15px 0 15px;
 $card-body-padding: 15px 15px 10px 15px;

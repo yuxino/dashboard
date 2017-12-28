@@ -18,6 +18,8 @@
 p {
   font-size: $p-fontSize;
   line-height: $line-height;
+  margin: $p-margin;
+  font-weight: $p-fontWeight;
 }
 
 blockquote {
