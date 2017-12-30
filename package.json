@@ -17,6 +17,7 @@
     "vue": "^2.5.2",
     "vue-amap": "^0.4.4",
     "vue-clickaway": "^2.1.0",
+    "vue-notification": "^1.3.4",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

@@ -9,7 +9,7 @@
   }
 }
 
-@each $tip in ('info', 'warn', 'error', 'primary', 'muted') {
+@each $tip in ('success', 'warn', 'error', 'primary', 'muted') {
   .#{$tip} {
     color: map-get($map: $tip-colors, $key: $tip) !important;
   }

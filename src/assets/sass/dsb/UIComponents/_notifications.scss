@@ -1,0 +1,24 @@
+.vue-notification {
+  padding: 10px;
+  margin: 0 5px 5px;
+  // default color and background
+  color: #ffffff !important;
+  background: #44A4FC;
+  border-left: 5px solid #187FE7;
+
+  &.success {
+    background: $notifications-success-color;
+    border-left-color: $notifications-success-border-color;
+  }
+
+  &.warn {
+    background: $notifications-warn-color;
+    border-left-color: $notifications-warn-border-color;
+  }
+
+  &.error {
+    background: $notifications-error-color;
+    border-left-color: $notifications-error-border-color;
+  }
+
+}

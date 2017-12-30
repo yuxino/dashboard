@@ -1,0 +1,28 @@
+.dsb-notification {
+  @each $color in ('success', 'warn', 'error') {
+    .#{$color}-btn {
+      border: 0;
+      padding: 10px 22px;
+      border-radius: 3px;
+      color: white;
+      outline: none;
+      cursor: pointer;
+      box-shadow: 0 5px 15px 0 rgba(46,61,73,.1);
+      $c: map-get($map: $tip-colors, $key: #{$color});
+      background: $c;
+      &:hover {
+        background: $c + #000320;
+      }
+    }
+  }
+
+  .notification-container {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin: 0 0 15px 0;
+    color: #000000;
+    font-size: 20px;
+  }
+}

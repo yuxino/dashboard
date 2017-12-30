@@ -125,7 +125,7 @@ export default {
         },
         {
           icon: 'nc-light-3',
-          color: 'info',
+          color: 'success',
           title: 'Revenue',
           content: '$1,345',
           font: 'fa-calendar-o',

@@ -21,7 +21,7 @@ $link-active-color: #42d0ed;
 
 // Base color
 $tip-colors: (
-  info: #87CB16,
+  success: #87CB16,
   warn: #FF9500,
   error: #FF4A55,
   primary: #1D62F0,
@@ -35,6 +35,14 @@ $tip-colors: (
 // Logo 
 $logo-size: 40px;
 $logo-color: #ffffff;
+
+// Notifications
+$notifications-success-color: #68CD86;
+$notifications-success-border-color: #42A85F;
+$notifications-warn-color: #ffb648;
+$notifications-warn-border-color: #f48a06;
+$notifications-error-color: #E54D42;
+$notifications-error-border-color: #B82E24;
 
 // SideBar
 $sidebar-bg: #272727;
@@ -129,3 +137,6 @@ $typography-typo-category-fontSize: 16px;
 
 // Maps
 $maps-close-color: #42b983;
+
+// Icons
+$icons-size: 32px;

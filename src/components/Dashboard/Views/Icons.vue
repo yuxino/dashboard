@@ -7,19 +7,15 @@
             <div slot='header' class='card-title'>
               400+ Awesome Icons
               <p class='card-category'>
-                Prower by Font 
-                <a href='http://fontawesome.io/'>Awesome</a>
+                Prower by
+                <a href='http://fontawesome.io/'>Font Awesome</a>
               </p>
             </div>
             <div slot='body'>
               <div class='row'>
-                <div class='col-lg-2 col-md-3 col-sm-4 col-6' :key='icon' v-for='icon in icons'>
-                  <div style='    text-align: center;
-padding: 45px 0 30px;
-    border: 1px solid #e5e5e5;
-    border-radius: 6px;
-    margin: 15px 0;'>
-                    <i style='margin-bottom: 15px;font-size: 32px' class='fa' :class="'fa-' + icon"></i>
+                <div class='col-lg-2 col-md-3 col-sm-4 col-6' :key='index' v-for='(icon, index) in icons'>
+                  <div class="icons-container">
+                    <i class='icon fa' :class="'fa-' + icon"></i>
                     <p>{{ icon }}</p>
                   </div>
                 </div>
