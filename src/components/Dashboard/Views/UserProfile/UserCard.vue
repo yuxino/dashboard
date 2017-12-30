@@ -1,8 +1,8 @@
 <template>
   <card class="userInfo">
-    <img slot="image" src="/static/img/bg.jpg" alt="wife">
+    <img slot="image" src="static/img/bg.jpg" alt="wife">
     <div slot="body" class="author">
-      <img src="/static/img/logo.png" alt="background">
+      <img src="static/img/logo.png" alt="background">
       <h4>
         <a href="">Mike Andrew</a>
         <br />

@@ -1,6 +1,6 @@
 <template>
   <router-link class="logo-link" to="/admin">
-    <img class="logo-img" src="/static/img/logo.png" alt="">
+    <img class="logo-img" src="static/img/logo.png" alt="">
     {{title}}
   </router-link>
 </template>
