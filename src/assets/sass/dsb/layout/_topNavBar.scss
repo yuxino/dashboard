@@ -8,10 +8,12 @@
   padding: $topNavBar-padding-top-bottom $topNavBar-padding-left-right;
   background-color: $content-top-bottom-bg;
   border-bottom: 1px solid $content-cutOff-color;
+  @include clearfix;
 
   .topNavbar-band {
     font-size: 20px;
     color: $topNavBar-color;
+    float: left;
     &:hover {
       color: $topNavBar-band-hover-color;
     }

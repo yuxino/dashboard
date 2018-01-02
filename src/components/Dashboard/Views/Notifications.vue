@@ -32,22 +32,6 @@
             </div>
 
             <div class="notification-container">
-              <p>Left Right</p>
-              <button class="success-btn" @click="success('TR')">
-                <i class="fa fa-info-circle" aria-hidden="true"></i>
-                SUCCESS
-              </button>
-              <button class="warn-btn" @click="warn('TR')">
-                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-                WARN
-              </button>
-              <button class="error-btn" @click="error('TR')">
-                <i class="fa fa-times-circle" aria-hidden="true"></i>
-                ERROR
-              </button>
-            </div>
-
-            <div class="notification-container">
               <p>Top Left</p>
               <button class="success-btn" @click="success('TL')">
                 <i class="fa fa-info-circle" aria-hidden="true"></i>
@@ -62,7 +46,22 @@
                 ERROR
               </button>
             </div>
-
+            <div class="notification-container">
+              <p>Top Right</p>
+              <button class="success-btn" @click="success('TR')">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                SUCCESS
+              </button>
+              <button class="warn-btn" @click="warn('TR')">
+                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                WARN
+              </button>
+              <button class="error-btn" @click="error('TR')">
+                <i class="fa fa-times-circle" aria-hidden="true"></i>
+                ERROR
+              </button>
+            </div>
+            
             <div class="notification-container">
               <p>Bottom Left</p>
               <button class="success-btn" @click="success('BR')">

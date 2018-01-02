@@ -4,6 +4,7 @@
       <router-link to="/admin" class="topNavbar-band">
         DashBoard
       </router-link>
+      <dropdown></dropdown>
       <!-- Mobile Menu -->
       <span class="mobile-menu" @click="toggleSideBar" 
                                 v-click-outside="closeSideBar">
