@@ -3,6 +3,17 @@
     <div class="sidebar-container">
       <logo></logo>
       <!--Something in Mobile-->
+      <!-- <dropdown class="mobile-dropdown" icon="fa-globe" listClass="mobile-list" titleClass="mobile-title">
+        <span slot="title">5 notifications</span>
+        <ul>
+          <li v-for="i in 4">
+            Notification {{ i }}
+          </li>
+          <li>
+            Another notification
+          </li>
+        </ul>
+      </dropdown> -->
       <ul class="nav">
         <side-bar-link v-for="link of linkList"
                        :key="link.to"

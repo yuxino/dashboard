@@ -1,21 +1,17 @@
 <template>
-  <span style="position:relative;cursor:pointer;color: #888888;display:inline-block;" @click="toggleList" v-click-outside="closeList" >
-    <i class="fa" :class="icon" aria-hidden="true" v-if="icon"></i>
-    <slot name="title" v-if="$slots.title"></slot>
-    <slot name="notification" v-if="$slots.notification"></slot>
-    <i class="fa fa-caret-down" aria-hidden="true"></i>
-    <div v-show="show" :class="className">
+  <div class="dropdown" @click.stop="toggleList" v-click-outside="closeList" >
+    <slot name="title"></slot>
+    <div v-show="show">
       <slot></slot>
     </div>
-  </span>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'DropDown',
   props: {
-    icon: { type: String, default: '' },
-    className: { type: String, default: '' }
+    icon: { type: String, default: '' }
   },
   data () {
     return {

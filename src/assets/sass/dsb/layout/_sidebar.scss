@@ -15,6 +15,36 @@
   position: relative;
   z-index: 20;
 
+  .mobile-dropdown {
+    color: white;
+    display: block;
+    i {
+      margin: 0 13px;
+      font-size: 28px;
+    }
+    .mobile-list {
+      border-bottom: 1px solid hsla(0,0%,100%,.2);
+      ul {
+        margin: 0;
+        padding: 0 0 0 38px;
+      }
+      li{
+        color: #fff;
+        margin: 5px 15px;
+        opacity: .86;
+        border-radius: 4px;
+        display: block;
+        padding: 10px 15px;
+      }
+    }
+  
+    .mobile-title {
+      padding: $sidebarLink-padding;
+      display: block;
+    }
+  }
+
+
   .nav {
     list-style: none;
     padding-left: 0;

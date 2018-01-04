@@ -1,6 +1,8 @@
 <template>
   <router-link class="logo-link" to="/admin">
-    <img class="logo-img" src="static/img/logo.png" alt="">
+    <div class="logo-wrapper">
+      <img class="logo-img" src="static/img/vue.png" alt="">
+    </div>
     {{title}}
   </router-link>
 </template>
@@ -10,7 +12,7 @@ export default {
   name: 'Logo',
   data () {
     return {
-      title: '喵帕斯'
+      title: 'DashBoard'
     }
   }
 }

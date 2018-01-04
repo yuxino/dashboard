@@ -10,12 +10,21 @@
   &:hover,&:focus {
     color: $logo-color;
   }
-  
-  .logo-img {
+
+  .logo-wrapper {
     width: $logo-size;
     height: $logo-size;
     margin-right: 10px;
-    vertical-align: middle;
-    image-rendering: -webkit-optimize-contrast;
+    border-radius: 50%;
+    background: #ffffff;
+    display: inline-block;
+    .logo-img {
+      $differ: 15px;
+      margin: $differ / 2;
+      width: $logo-size - $differ;
+      height: $logo-size - $differ;
+      vertical-align: middle;
+      image-rendering: -webkit-optimize-contrast;
+    }
   }
 }

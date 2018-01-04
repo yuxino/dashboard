@@ -4,20 +4,26 @@
       <router-link to="/admin" class="topNavbar-band">
         DashBoard
       </router-link>
-      <router-link to="/admin" class="topNavbar-link">
-        <i class="fa fa-vine" aria-hidden="true"></i>
-      </router-link>
-      <dropdown icon="fa-bell-o" className="dropdown">
-        <span slot="notification" class="no">5</span>
-        <ul>
-          <li v-for="i in 4">
-            Notification {{ i }}
-          </li>
-          <li>
-            Another notification
-          </li>
-        </ul>
-      </dropdown>
+      <div class="tools">
+        <router-link to="/admin" class="topNavbar-link">
+          <i class="fa fa-vine" aria-hidden="true"></i>
+        </router-link>
+        <dropdown>
+          <template slot="title">
+            <span class="notification">5</span>
+            <i class="fa fa-bell-o" aria-hidden="true"></i>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </template>
+          <ul class="topNavbar-dropdown">
+            <li :key="i" v-for="i in 4">
+              Notification {{ i }}
+            </li>
+            <li>
+              Another notification
+            </li>
+          </ul>
+        </dropdown>
+      </div>
       <!-- Mobile Menu -->
       <span class="mobile-menu" @click="toggleSideBar" 
                                 v-click-outside="closeSideBar">
@@ -27,25 +33,18 @@
         <router-link to="/admin" class="topNavbar-link">
           Account
         </router-link>
-        <dropdown className="dropdown" class="topNavbar-link">
-          <span slot="title">Dropdown</span>
-          <ul>
-            <li>
-              Action
-            </li>
-            <li>
-              Another Action
-            </li>
-            <li>
-              Something
-            </li>
-            <li>
-              Some Action
-            </li>
+        <dropdown class="topNavbar-link">
+          <template slot="title">
+            <span>Dropdown</span>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </template>
+          <ul class="topNavbar-dropdown">
+            <li>Action</li>
+            <li>Another Action</li>
+            <li>Something</li>
+            <li>Some Action</li>
             <li class="divider"></li>
-            <li>
-              Separated link
-            </li>
+            <li>Separated link</li>
           </ul>
         </dropdown>
         <router-link to="/admin" class="topNavbar-link">
