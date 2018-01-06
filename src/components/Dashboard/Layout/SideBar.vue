@@ -3,17 +3,44 @@
     <div class="sidebar-container">
       <logo></logo>
       <!--Something in Mobile-->
-      <!-- <dropdown class="mobile-dropdown" icon="fa-globe" listClass="mobile-list" titleClass="mobile-title">
-        <span slot="title">5 notifications</span>
-        <ul>
-          <li v-for="i in 4">
-            Notification {{ i }}
-          </li>
-          <li>
-            Another notification
-          </li>
-        </ul>
-      </dropdown> -->
+      <div class="mobile-menu">
+        <dropdown :stop="true" class="mobile-dropdown">
+          <div class="title" slot="title">
+            <i class="has-icon fa fa-globe"></i>
+            <span>5 notifications</span>
+            <i class="fa fa-caret-down caret" aria-hidden="true"></i>
+          </div>
+          <ul>
+            <li :key="i" v-for="i in 4">
+              Notification {{ i }}
+            </li>
+            <li>
+              Another notification
+            </li>
+          </ul>
+        </dropdown>
+        <div class="title">
+          <i class="has-icon nc-icon nc-zoom-split" aria-hidden="true"></i>
+          <span>Search</span>
+        </div>
+        <dropdown :stop="true" class="mobile-dropdown">
+          <div class="title" slot="title">
+            <span class="no-icon">DropDown</span>
+            <i class="fa fa-caret-down caret" aria-hidden="true"></i>
+          </div>
+          <ul>
+            <li :key="i" v-for="i in 4">
+              Notification {{ i }}
+            </li>
+            <li>
+              Another notification
+            </li>
+          </ul>
+        </dropdown>
+        <div class="title">
+          <span class="no-icon">Log out</span>
+        </div>
+      </div>
       <ul class="nav">
         <side-bar-link v-for="link of linkList"
                        :key="link.to"

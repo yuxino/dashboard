@@ -1,11 +1,4 @@
 @media only screen and (max-width: 768px){
-  .sidebar {
-    transform: translateX(#{$app-width});
-    position: absolute;
-    min-height: #{$app-height};
-    z-index: 10;
-  }
-
   #App {
     transform: translate3d(0,0,0);
     transition: all .4s ease-in-out;
@@ -14,9 +7,12 @@
     }
   }
 
-  .content-footer {
-    .copyright{
-      float: none;
+  .sidebar {
+    transform: translateX(#{$app-width});
+    position: absolute;
+    overflow: auto;
+    .mobile-menu {
+      display: block;
     }
   }
 
@@ -30,6 +26,12 @@
     }
     .tools {
       display: none;
+    }
+  }
+
+  .content-footer {
+    .copyright{
+      float: none;
     }
   }
 }

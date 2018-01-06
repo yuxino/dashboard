@@ -1,7 +1,10 @@
+// TODO Code is no DRY
 .sidebar {
   width: $sidebar-width;
   position: relative;
   background: $sidebar-bg;
+  height: #{$app-height};
+  z-index: 10;
   
   &::after {
     @include multiply;
@@ -15,18 +18,47 @@
   position: relative;
   z-index: 20;
 
-  .mobile-dropdown {
-    color: white;
-    display: block;
-    i {
-      margin: 0 13px;
-      font-size: 28px;
+  // should modify  
+  .mobile-menu {
+    display: none;
+    padding: 10px 0;
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
+    .title {
+      font-size:  $sidebarLink-fontSize;
+      color: $sidebarLink-color;
+      margin: $sidebarLink-margin;
+      padding: $sidebarLink-padding;
+      span {
+        text-transform: uppercase;
+      }
+      * {
+        font-weight: 600;
+        font-size: 12px;
+        display: inline-block;
+        vertical-align: middle;
+      }
     }
-    .mobile-list {
-      border-bottom: 1px solid hsla(0,0%,100%,.2);
+    .has-icon {
+      font-size: 28px;
+      margin-right: 15px;
+      color: #e2e2e2;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .no-icon {
+        // should modify
+      padding-left: 28px + 15px;      
+    }
+    .mobile-dropdown {
+      display: block;
+      .caret {
+        font-size: 12px;
+        margin: 0 0 0 3px;
+      }
       ul {
-        margin: 0;
-        padding: 0 0 0 38px;
+        margin: 6px 0 0 0;
+        // should modify
+        padding-left: 28px + 15px + 10px;
       }
       li{
         color: #fff;
@@ -35,15 +67,10 @@
         border-radius: 4px;
         display: block;
         padding: 10px 15px;
+        white-space: nowrap;
       }
     }
-  
-    .mobile-title {
-      padding: $sidebarLink-padding;
-      display: block;
-    }
   }
-
 
   .nav {
     list-style: none;
@@ -53,7 +80,7 @@
     li {
       i {
         font-size: 28px;
-        margin-right: 10px;
+        margin-right: 15px;
         display: inline-block;
         vertical-align: middle;
       }

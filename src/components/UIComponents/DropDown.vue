@@ -1,9 +1,7 @@
 <template>
-  <div class="dropdown" @click.stop="toggleList" v-click-outside="closeList" >
+  <div class="dropdown" @click="toggleList($event)" v-click-outside="closeList" >
     <slot name="title"></slot>
-    <div v-show="show">
-      <slot></slot>
-    </div>
+    <slot v-if="show"></slot>
   </div>
 </template>
 
@@ -11,7 +9,8 @@
 export default {
   name: 'DropDown',
   props: {
-    icon: { type: String, default: '' }
+    icon: { type: String, default: '' },
+    stop: { type: Boolean, default: false }
   },
   data () {
     return {
@@ -19,7 +18,13 @@ export default {
     }
   },
   methods: {
-    toggleList () {
+    toggleList (e) {
+      if (this.stop) {
+        e.stopPropagation()
+        if (e.target.nodeName === 'LI') {
+          return
+        }
+      }
       this.show = !this.show
     },
     closeList () {

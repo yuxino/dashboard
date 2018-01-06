@@ -120,8 +120,10 @@
   }
 
   .topNavbar-link {
+    margin-right: 25px;
     color: $topNavBar-color;
-    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
     &:hover, &:focus {
       color: $topNavBar-link-active-color;
     }

@@ -8,7 +8,7 @@
         <router-link to="/admin" class="topNavbar-link">
           <i class="fa fa-vine" aria-hidden="true"></i>
         </router-link>
-        <dropdown>
+        <dropdown class="topNavbar-link">
           <template slot="title">
             <span class="notification">5</span>
             <i class="fa fa-bell-o" aria-hidden="true"></i>
