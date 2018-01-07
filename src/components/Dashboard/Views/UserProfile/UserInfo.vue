@@ -8,9 +8,9 @@
         <div class="row">
           <div class="col-md-5">
             <input-group type="text"
-                          label="Company"
-                          :disabled="true" 
-                          v-model="company">
+                         label="Company"
+                         :disabled="true" 
+                         v-model="company">
             </input-group>
           </div>
           <div class="col-md-4">
@@ -22,57 +22,57 @@
           </div>
           <div class="col-md-3">
             <input-group type="email"
-                        label="Email" 
-                        placeholder="Email"
-                        v-model="email">
+                         label="Email" 
+                         placeholder="Email"
+                         v-model="email">
             </input-group>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6">
             <input-group type="text"
-                        label="First Name" 
-                        placeholder="First Name"
-                        v-model="firstName">
+                         label="First Name" 
+                         placeholder="First Name"
+                         v-model="firstName">
             </input-group>
           </div>
           <div class="col-md-6">
             <input-group type="text"
-                        label="Last Name" 
-                        placeholder="Last Name"
-                        v-model="lastName">
+                         label="Last Name" 
+                         placeholder="Last Name"
+                         v-model="lastName">
             </input-group>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
             <input-group type="text"
-                        label="Address" 
-                        placeholder="Home Address"
-                        v-model="address">
+                         label="Address" 
+                         placeholder="Home Address"
+                         v-model="address">
             </input-group>
           </div>
         </div>
         <div class="row">
           <div class="col-md-5">
             <input-group type="text"
-                        label="City" 
-                        placeholder="City"
-                        v-model="city">
+                         label="City" 
+                         placeholder="City"
+                         v-model="city">
             </input-group>
           </div>
           <div class="col-md-4">
             <input-group type="text"
-                        label="Country" 
-                        placeholder="COUNTRY"
-                        v-model="country">
+                         label="Country" 
+                         placeholder="COUNTRY"
+                         v-model="country">
             </input-group>
           </div>
           <div class="col-md-3">
             <input-group type="number"
-                        label="Postal code" 
-                        placeholder="ZIP Code"
-                        v-model="zipCode">
+                         label="Postal code" 
+                         placeholder="ZIP Code"
+                         v-model="zipCode">
             </input-group>
           </div>
         </div>
