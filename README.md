@@ -1,4 +1,4 @@
-# beautiful dashboard
+# Beautiful dashboard
 
 > A Vue.js project
 
